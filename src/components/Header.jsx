@@ -1,51 +1,53 @@
 import React from 'react';
-import aboutImage from '../assets/icons/aboutImg.png';
-import menuImage from '../assets/icons/menu.png';
-import blogImage from '../assets/icons/blogImg.png';
-import contactImage from '../assets/icons/contactImg.png';
-import projectImage from '../assets/icons/projectImg.png';
+import aboutImage from '@icons/aboutImg.png';
+import menuImage from '@icons/menu.png';
+import blogImage from '@icons/blogImg.png';
+import contactImage from '@icons/contactImg.png';
+import projectImage from '@icons/projectImg.png';
 
-import styles from '../styles/Layout.module.scss';
+import Style from '@styles/Layout.module.scss';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Header = () => {
   return (
-    <header className={styles['header']}>
-      <div>
-        <h1 className="header-title">Home</h1>
+    <header className={Style.header}>
+      <div className={Style.headerHomeContainer}>
+        <h1 className={Style.headerTitle}>Home</h1>
+        <Image src={menuImage} alt="MenuLogo" className={Style['menuLogo']} />
       </div>
-      <div>
-        <Image src={menuImage} alt="MenuLogo" className={styles['menu-logo']} />
-        <ul className={styles['navbar-list']}>
-          <li className={styles['header-list-item']}>
-            <div className={styles['item-menu-container']}>
-              <Image src={aboutImage} alt="about-menu" className={styles['menu-logo-item']} />             <a className={styles['navbar-link']} href="/">
+      <div className={Style.headerBody}>
+        <ul className={Style.navbarList}>
+          <li className={Style.headerListItem}>
+            <div className={Style.itemMenuContainer}>
+              <Image src={aboutImage} alt="about-menu" className={Style.menuLogoItem} />
+              <Link className={Style.navbarLink} href="/">
                 About
-              </a>
+              </Link>
             </div>
           </li>
-          <li className={styles['header-list-item']}>
-          <div className={styles['item-menu-container']}>
-              <Image src={projectImage} alt="projects-menu" className={styles['menu-logo-item logos-desktop']} />
-              <a className={styles['navbar-link']} href="/">
+          <li className={Style.headerListItem}>
+            <div className={Style.itemMenuContainer}>
+              <Image src={projectImage} alt="projects-menu" className={Style.menuLogoItem} />
+              <Link className={Style.navbarLink} href="/">
                 Projects
-              </a>
+              </Link>
             </div>
           </li>
-          <li className={styles['header-list-item']}>
-          <div className={styles['item-menu-container']}>
-              <Image src={blogImage} alt="Blog-menu" className={styles['menu-logo-item']} />
-              <a className={styles['navbar-link']} href="/">
+          <li className={Style.headerListItem}>
+            <div className={Style.itemMenuContainer}>
+              <Image src={blogImage} alt="Blog-menu" className={Style.menuLogoItem} />
+              <Link className={Style.navbarLink} href="/">
                 Blog
-              </a>
+              </Link>
             </div>
           </li>
-          <li className={styles['header-list-item']}>
-            <div className={styles['item-menu-container']}>
-              <Image src={contactImage} alt="Contact-Menu" className={styles['menu-logo-item']} />
-              <a className={styles['navbar-link']} href="/">
+          <li className={Style.headerListItem}>
+            <div className={Style.itemMenuContainer}>
+              <Image src={contactImage} alt="Contact-Menu" className={Style.menuLogoItem} />
+              <Link className={Style.navbarLink} href="/">
                 Contact
-              </a>
+              </Link>
             </div>
           </li>
         </ul>

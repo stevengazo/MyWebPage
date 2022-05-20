@@ -1,73 +1,98 @@
 .header{
-    width: 100%;        
-    display:flex;
+    position: sticky;
+    top: 0%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;        
+    justify-content: space-around;
+    align-items: center;
+}              
+.headerHomeContainer{
+    display: flex;
+    width: 3rem;
+    justify-content: space-around;
+}
+.navbarList{
+    display: flex;
+    width: 35rem;
+    height: 100%;
     flex-direction: row;
-    justify-content:space-around;
+    align-items: center;
+    justify-content: space-around;
+    padding:0px;
 }
-.logos-desktop{
-    display:  none;
+.headerListItem{
+    list-style: none;
 }
-.navbar-list{
-    width: 1fr;
-    display:flex;
-    justify-content:space-between;        
-    list-style: none;        
+
+.itemMenuContainer{  
+    margin-left: 1rem;     
+    display: flex;
+    width: 10rem;
+    flex-direction: row-reverse;
+    align-items: center;
 }
-.header-list-item{                
-    padding: 10px;
-    margin-right: 40px;
+.itemMenuContainer:hover{       
+    border: 1px solid gray;
+    border-radius: 15px;
+}   
+.menuLogoItem{
+    display: none !important;
 }
-.header-list-item:hover{
-        border: 1px solid silver;
-        border-radius: 5px;
-        color:silver;
-}
-.menu-logo{
-    display: none;
-}
-.navbar-link :hover{
-    color: gray;
-}
-.menu-logo-item{
-    display: none;
-}
+
+
 
 @media only screen and (max-width: 600px)  {
     .header{
-        width: 100%;                    
-        flex-direction: column !important;                       
-    }
-    .menu-logo{
-        position: relative;
-        display:flex !important;
-        display:inline-flex !important;
-        position: absolute;
-        top: 30px;
-        right: 30px;
-    }
-    .navbar-list{
- 
-    }
-    .navbar-list{
-        display:flex!important;             
-        flex-direction: column;               
-    }
-    .header-list-item{                   
-        margin-top: 1em;
-        margin-bottom: 1em;
-    }                 
-    .header-title{
-        margin-left: 2rem;
-    }
-    .item-menu-container{
-        display:inline-flex !important;
-        justify-content: space-between!important;
-        align-items: center!important;
-    }
-    .menu-logo-item{    
-        display: flex;        
-        width: 25px;
-        height: 25px;
-        margin: 5px;
-    }                 
+        position: sticky;
+        top: 0%;
+        display: flex;
+        flex-direction: column;        
+        justify-content: center;
+        align-items: center;
+    }              
+   .headerHomeContainer{
+       display: flex;
+       width: 100%;
+       justify-content: space-around;
+       align-items: center;
+   }
+   .menuLogo{
+       display: flex;
+       width: 100px;
+       height: 255px;              
+   }
+   .headerBody{
+       width: 20rem!important;
+   }
+   .navbarList{
+       display: block;           
+       height: 100%;       
+       width: 100%;
+       flex-direction: column;
+       list-style: none;
+       align-items: center;
+       justify-content: space-around;
+       padding:0px;
+   }
+   .headerListItem{
+        margin-bottom: 1rem;
+        width: 100%;
+   }
+   .itemMenuContainer{       
+       display: flex;
+       width: 90%;
+       padding-left: 2rem;
+       padding-right: 2rem;
+       flex-direction: row;
+       justify-content:  space-around;
+   }
+   .menuLogoItem{
+       display:flex !important;
+       margin-right: rem!important;
+   }
+
+
+
+
 }
