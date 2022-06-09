@@ -1,0 +1,15 @@
+.gridTemplate{
+    position: relative;
+    display: grid;
+    border: 1px solid red;
+    grid-template-columns: auto 1fr;
+    background-color: gray;
+    height:35.2rem;
+    z-index: 1;
+}
+
+.renderSide{    
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid blue;
+}

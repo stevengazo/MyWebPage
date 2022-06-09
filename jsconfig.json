@@ -4,6 +4,7 @@
         "paths": {
             "@icons/*":["assets/icons/*"],
             "@logos/*":["assets/logos/*"],
+            "@img/*":["assets/img/*"],
             "@styles/*":["styles/*"],
             "@pages/*":["pages/*"],
             "@containers/*":["containers/*"],

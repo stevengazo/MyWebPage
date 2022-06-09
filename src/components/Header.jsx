@@ -5,7 +5,7 @@ import blogImage from '@icons/blogImg.png';
 import contactImage from '@icons/contactImg.png';
 import projectImage from '@icons/projectImg.png';
 
-import Style from '@styles/Layout.module.scss';
+import Style from '@styles/Header.module.scss';
 import Image from 'next/image';
 import Link from 'next/link';
 
